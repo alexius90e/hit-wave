@@ -1,8 +1,11 @@
 .one-click {
   padding: 190px 0 370px;
+  background: url(../assets/wave.svg) center no-repeat;
+  background-size: auto calc(100% - 200px);
 
   @include tablet {
     padding: 175px 0 164px;
+    background-size: auto calc(100% - 150px);
   }
 
   &__title {
@@ -61,7 +64,7 @@
         }
       }
 
-       &:hover::before  {
+      &:hover::before {
         filter: brightness(0%) invert(100%);
       }
     }
