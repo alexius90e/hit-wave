@@ -453,6 +453,184 @@ img {
   color: rgba(255, 255, 255, 0.5);
 }
 
+.first-screen {
+  position: relative;
+  padding: 65px 0 0;
+  background: radial-gradient(62% 58% at 27% -25%, rgba(173, 71, 255, 0.5) 13%, rgba(0, 0, 0, 0) 100%), radial-gradient(115% 136% at -101% 44%, rgba(173, 71, 255, 0.5) 0%, rgba(173, 71, 255, 0) 100%), radial-gradient(241% 84% at -35% 0%, rgba(173, 71, 255, 0.5) 0%, rgba(173, 71, 255, 0) 100%);
+}
+@media (max-width: 768px) {
+  .first-screen {
+    padding-top: 95px;
+  }
+}
+.first-screen::before, .first-screen::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  display: block;
+  width: 350px;
+  background: radial-gradient(43.09% 88.68% at 0% 49.91%, #34164d 0%, rgba(52, 22, 77, 0) 100%);
+  opacity: 0.5;
+}
+@media (max-width: 768px) {
+  .first-screen::before, .first-screen::after {
+    display: none;
+  }
+}
+.first-screen::before {
+  left: 0;
+}
+.first-screen::after {
+  right: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.first-screen__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: block;
+  background: url(../assets/wave.svg) center bottom 40px no-repeat;
+  background-size: auto calc(100% - 370px);
+}
+@media (max-width: 768px) {
+  .first-screen__bg {
+    padding: 175px 0 164px;
+    background-size: auto calc(100% - 320px);
+  }
+}
+.first-screen__wrapper {
+  position: relative;
+  z-index: 10;
+  max-width: 480px;
+  margin: 0 auto;
+}
+.first-screen__title {
+  margin: 0 0 32px;
+  font-weight: 540;
+  font-size: 50px;
+  line-height: 98%;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  text-align: center;
+  background: linear-gradient(167deg, #fff 0%, rgba(255, 255, 255, 0.9) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media (max-width: 768px) {
+  .first-screen__title {
+    margin-bottom: 16px;
+    font-size: 32px;
+  }
+}
+.first-screen__description {
+  margin: 0 0 32px;
+  font-weight: 650;
+  font-size: 20px;
+  line-height: 110%;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  text-align: center;
+  background: linear-gradient(168deg, #fff 0%, rgba(255, 255, 255, 0.9) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media (max-width: 768px) {
+  .first-screen__description {
+    margin-bottom: 40px;
+    font-size: 16px;
+  }
+}
+.first-screen__download {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 0 60px;
+}
+@media (max-width: 768px) {
+  .first-screen__download {
+    margin-bottom: 64px;
+  }
+}
+.first-screen__download-button {
+  display: inline-block;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ffffff;
+  -webkit-transition: background-color ease-out 0.2s;
+  transition: background-color ease-out 0.2s;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .first-screen__download-button {
+    padding: 7px 10px;
+  }
+}
+.first-screen__download-button:hover {
+  background-color: #a83efc;
+}
+.first-screen__download-button::before {
+  content: "";
+  display: block;
+  width: 133px;
+  aspect-ratio: 130/33;
+  background: url(../assets/appstore.svg) center/cover no-repeat;
+  -webkit-transition: -webkit-filter ease-out 0.2s;
+  transition: -webkit-filter ease-out 0.2s;
+  transition: filter ease-out 0.2s;
+  transition: filter ease-out 0.2s, -webkit-filter ease-out 0.2s;
+}
+@media (max-width: 768px) {
+  .first-screen__download-button::before {
+    width: 110px;
+  }
+}
+.first-screen__download-button:hover::before {
+  -webkit-filter: brightness(0%) invert(100%);
+          filter: brightness(0%) invert(100%);
+}
+.first-screen__phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-height: 498px;
+  margin: 0;
+  overflow: hidden;
+}
+@media (max-width: 768px) {
+  .first-screen__phone {
+    max-height: 346px;
+  }
+}
+.first-screen__phone-image {
+  display: block;
+  max-width: 100%;
+  width: 340px;
+  height: auto;
+}
+@media (max-width: 768px) {
+  .first-screen__phone-image {
+    width: 262px;
+  }
+}
+
 .how-it-works__wrapper {
   display: block;
 }
