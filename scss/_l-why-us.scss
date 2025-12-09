@@ -1,0 +1,138 @@
+.why-us {
+  border-bottom: 1px solid #264540;
+  background: url(../assets/first-screen-info-bg.svg) center no-repeat;
+  background-size: 600px;
+
+  @include tablet {
+    background-size: 480px;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 894px;
+    padding: 130px 0;
+    margin: 0 auto;
+
+    @include tablet {
+      padding: 92px 0 82px;
+    }
+  }
+
+  &__card {
+    display: block;
+    flex: 0 0 188px;
+    width: 100%;
+
+    @include tablet {
+      flex: 0 0 150px;
+    }
+
+    &_speed {
+      order: 0;
+
+      @include tablet {
+        transform: translate3d(20px, 0, 0);
+      }
+    }
+
+    &_protocols {
+      order: 1;
+      transform: translate3d(-25px, -42px, 0);
+
+      @include tablet {
+        order: 3;
+        transform: translate3d(20px, 0, 0);
+      }
+    }
+
+    &_privacy {
+      order: 3;
+      transform: translate3d(137px, 0, 0);
+
+      @include tablet {
+        flex: 0 0 104px;
+        order: 1;
+        transform: translate3d(-20px, 40px, 0);
+      }
+    }
+
+    &_setup {
+      order: 4;
+      max-width: 128px;
+      transform: translate3d(-169px, -74px, 0);
+
+      @include tablet {
+        flex: 0 0 104px;
+        transform: translate3d(-20px, -60px, 0);
+      }
+    }
+
+    &-figure {
+      display: block;
+      width: fit-content;
+      margin: 0;
+
+      &-image {
+        display: block;
+        max-width: 100%;
+        height: auto;
+      }
+    }
+
+    &-title {
+      margin: 10px 0 0;
+      font-weight: 540;
+      font-size: 20px;
+      line-height: 140%;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #5fddc7;
+
+      @include tablet {
+        font-size: 16px;
+      }
+    }
+
+    &-text {
+      margin: 18px 0 0;
+      font-weight: 410;
+      font-size: 20px;
+      line-height: 140%;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #f0f3f2;
+
+      @include tablet {
+        font-size: 16px;
+        margin-top: 12px;
+      }
+    }
+  }
+
+  &__title {
+    flex: 1 1 100%;
+    order: 2;
+    margin: 120px 0;
+    font-weight: 540;
+    font-size: 86px;
+    line-height: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    color: #f0f3f2;
+
+    @include desktop {
+      font-size: 90px;
+    }
+
+    @include laptop {
+      font-size: 72px;
+    }
+
+    @include tablet {
+      margin: 116px 0 126px;
+      font-size: 52px;
+    }
+  }
+}

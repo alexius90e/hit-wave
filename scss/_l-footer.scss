@@ -1,0 +1,47 @@
+.footer {
+  padding: 20px 0;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    &-copyright,
+    &-disclaimer {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 125%;
+      letter-spacing: 0.02em;
+      color: rgba($color: #ffffff, $alpha: 0.5);
+
+      @include tablet {
+        font-size: 12px;
+      }
+    }
+  }
+
+  &__docs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 22px;
+
+    &-link {
+      flex: 0 0 auto;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 125%;
+      letter-spacing: 0.02em;
+      color: rgba($color: #ffffff, $alpha: 0.5);
+
+      &:hover {
+        color: rgba($color: #ffffff, $alpha: 1);
+      }
+    }
+  }
+}
